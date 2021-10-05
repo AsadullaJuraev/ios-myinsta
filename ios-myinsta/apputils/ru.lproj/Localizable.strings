@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  ios-myinsta
+
+  Created by Asadulla Juraev on 27/09/21.
+  
+*/
+
+"app_name" = "Instagram";
+"text_email" = "Эл.адрес";
+"password" = "Пароль";
+"cpassword" = "Подтвердите пароль";
+"fullname" = "Полное имя";
+"sign_in" = "Войти";
+"sign_up" = "Регистрация";
+"dont_have_account" = "Нет аккаунт?";
+"already_have_account" = "Уже есть аккаунт?";
+"upload" = "Загрузить";
+"description" = "Заголовок";
+"pick_photo" = "Выбрать фото";
+"take_photo" = "Сделать фотографию";
+"sign_out" = "Выход";
+"sign_out_text" = "Вы хотите выйти?";
+"confirm" = "Подтверждать";
+"errorText_button_signUp" = "Ошибка";
+"errorMessage_button_signUp" = "Надо заполнить все поле";
+"errorMessage_server_signUp" = "Проверить электронную почту или пароль";

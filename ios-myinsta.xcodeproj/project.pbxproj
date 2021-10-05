@@ -3,18 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51F608968A0AD38178CDA7A0 /* Pods_ios_myinsta_ios_myinstaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36E8E1B49160E339615C93A /* Pods_ios_myinsta_ios_myinstaUITests.framework */; };
+		A7BE3075B58F892C6573870C /* Pods_ios_myinstaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDB15DE12533A5EAA69F9CF /* Pods_ios_myinstaTests.framework */; };
 		F331699D27008E3000D2DD0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331699C27008E3000D2DD0E /* AppDelegate.swift */; };
 		F331699F27008E3000D2DD0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331699E27008E3000D2DD0E /* SceneDelegate.swift */; };
-		F33169A127008E3000D2DD0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169A027008E3000D2DD0E /* ContentView.swift */; };
 		F33169A327008E3200D2DD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33169A227008E3200D2DD0E /* Assets.xcassets */; };
 		F33169A627008E3200D2DD0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33169A527008E3200D2DD0E /* Preview Assets.xcassets */; };
 		F33169A927008E3200D2DD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33169A727008E3200D2DD0E /* LaunchScreen.storyboard */; };
 		F33169B427008E3200D2DD0E /* ios_myinstaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169B327008E3200D2DD0E /* ios_myinstaTests.swift */; };
 		F33169BF27008E3200D2DD0E /* ios_myinstaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169BE27008E3200D2DD0E /* ios_myinstaUITests.swift */; };
+		F33169D127008EA600D2DD0E /* StarterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169D027008EA600D2DD0E /* StarterScreen.swift */; };
+		F33169D327008F9A00D2DD0E /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169D227008F9A00D2DD0E /* SignInScreen.swift */; };
+		F33169D6270091A600D2DD0E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169D5270091A600D2DD0E /* Utils.swift */; };
+		F33169D8270096B100D2DD0E /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169D7270096B100D2DD0E /* SignUpScreen.swift */; };
+		F33169DB270196F600D2DD0E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F33169DD270196F600D2DD0E /* Localizable.strings */; };
+		F33169E12701984100D2DD0E /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F33169E02701984100D2DD0E /* Billabong.ttf */; };
+		F33169E32701EB2600D2DD0E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169E22701EB2600D2DD0E /* HomeScreen.swift */; };
+		F33169E72701EB4600D2DD0E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169E62701EB4600D2DD0E /* User.swift */; };
+		F33169E92701EB5300D2DD0E /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169E82701EB5300D2DD0E /* SessionStore.swift */; };
+		F33169EB2701EE5400D2DD0E /* HomeFeedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169EA2701EE5400D2DD0E /* HomeFeedScreen.swift */; };
+		F33169ED2701EE6600D2DD0E /* HomeSearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169EC2701EE6600D2DD0E /* HomeSearchScreen.swift */; };
+		F33169EF2701EE7B00D2DD0E /* HomeUploadScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169EE2701EE7B00D2DD0E /* HomeUploadScreen.swift */; };
+		F33169F12701EE8A00D2DD0E /* HomeLikesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169F02701EE8A00D2DD0E /* HomeLikesScreen.swift */; };
+		F33169F32701EE9800D2DD0E /* HomeProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169F22701EE9800D2DD0E /* HomeProfileScreen.swift */; };
+		F33169F5270435EF00D2DD0E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169F4270435EF00D2DD0E /* Coordinator.swift */; };
+		F33169F7270436D900D2DD0E /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169F6270436D900D2DD0E /* ImagePickerView.swift */; };
+		F33169FA2704B16100D2DD0E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169F92704B16100D2DD0E /* FeedViewModel.swift */; };
+		F33169FC2704B19700D2DD0E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169FB2704B19700D2DD0E /* Post.swift */; };
+		F33169FF2705641E00D2DD0E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169FE2705641E00D2DD0E /* PostCell.swift */; };
+		F3316A0127056B9E00D2DD0E /* LikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A0027056B9E00D2DD0E /* LikesViewModel.swift */; };
+		F3316A032705727A00D2DD0E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A022705727A00D2DD0E /* SearchViewModel.swift */; };
+		F3316A052705746300D2DD0E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A042705746300D2DD0E /* UserCell.swift */; };
+		F3316A0727057BAF00D2DD0E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A0627057BAF00D2DD0E /* ProfileViewModel.swift */; };
+		F3316A092705DEAB00D2DD0E /* MyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A082705DEAB00D2DD0E /* MyPostCell.swift */; };
+		F33B896727082B2600AEFCC5 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B896627082B2600AEFCC5 /* SignInViewModel.swift */; };
+		F33B89692708548800AEFCC5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B89682708548800AEFCC5 /* SignUpViewModel.swift */; };
+		F3AEE56B27073864004388E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3AEE56A27073864004388E2 /* GoogleService-Info.plist */; };
+		FFF2D427A73D2F357704612A /* Pods_ios_myinsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3058617483DA4D945332AC0B /* Pods_ios_myinsta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +64,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B9E6ADD9B4667B9A70BBC07 /* Pods-ios-myinstaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-myinstaTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-myinstaTests/Pods-ios-myinstaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3058617483DA4D945332AC0B /* Pods_ios_myinsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_myinsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B03A650475F7E58959C81D /* Pods-ios-myinsta-ios-myinstaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-myinsta-ios-myinstaUITests.debug.xcconfig"; path = "Target Support Files/Pods-ios-myinsta-ios-myinstaUITests/Pods-ios-myinsta-ios-myinstaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		794AE61002392F30A95FC7DB /* Pods-ios-myinsta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-myinsta.release.xcconfig"; path = "Target Support Files/Pods-ios-myinsta/Pods-ios-myinsta.release.xcconfig"; sourceTree = "<group>"; };
+		952F8C643B078BB00E143100 /* Pods-ios-myinsta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-myinsta.debug.xcconfig"; path = "Target Support Files/Pods-ios-myinsta/Pods-ios-myinsta.debug.xcconfig"; sourceTree = "<group>"; };
+		BEDB15DE12533A5EAA69F9CF /* Pods_ios_myinstaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_myinstaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D8300E7F8A763AC83724F1 /* Pods-ios-myinsta-ios-myinstaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-myinsta-ios-myinstaUITests.release.xcconfig"; path = "Target Support Files/Pods-ios-myinsta-ios-myinstaUITests/Pods-ios-myinsta-ios-myinstaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D36E8E1B49160E339615C93A /* Pods_ios_myinsta_ios_myinstaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_myinsta_ios_myinstaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04D95EEC569ECE3CC3981BD /* Pods-ios-myinstaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-myinstaTests.release.xcconfig"; path = "Target Support Files/Pods-ios-myinstaTests/Pods-ios-myinstaTests.release.xcconfig"; sourceTree = "<group>"; };
 		F331699927008E3000D2DD0E /* ios-myinsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-myinsta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F331699C27008E3000D2DD0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F331699E27008E3000D2DD0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F33169A027008E3000D2DD0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F33169A227008E3200D2DD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33169A527008E3200D2DD0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F33169A827008E3200D2DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +86,35 @@
 		F33169BA27008E3200D2DD0E /* ios-myinstaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-myinstaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33169BE27008E3200D2DD0E /* ios_myinstaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_myinstaUITests.swift; sourceTree = "<group>"; };
 		F33169C027008E3200D2DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33169D027008EA600D2DD0E /* StarterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterScreen.swift; sourceTree = "<group>"; };
+		F33169D227008F9A00D2DD0E /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		F33169D5270091A600D2DD0E /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F33169D7270096B100D2DD0E /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		F33169DC270196F600D2DD0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F33169DE2701973F00D2DD0E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F33169DF2701974000D2DD0E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F33169E02701984100D2DD0E /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Billabong.ttf; sourceTree = "<group>"; };
+		F33169E22701EB2600D2DD0E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F33169E62701EB4600D2DD0E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F33169E82701EB5300D2DD0E /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		F33169EA2701EE5400D2DD0E /* HomeFeedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedScreen.swift; sourceTree = "<group>"; };
+		F33169EC2701EE6600D2DD0E /* HomeSearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchScreen.swift; sourceTree = "<group>"; };
+		F33169EE2701EE7B00D2DD0E /* HomeUploadScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUploadScreen.swift; sourceTree = "<group>"; };
+		F33169F02701EE8A00D2DD0E /* HomeLikesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLikesScreen.swift; sourceTree = "<group>"; };
+		F33169F22701EE9800D2DD0E /* HomeProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProfileScreen.swift; sourceTree = "<group>"; };
+		F33169F4270435EF00D2DD0E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F33169F6270436D900D2DD0E /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		F33169F92704B16100D2DD0E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		F33169FB2704B19700D2DD0E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F33169FE2705641E00D2DD0E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F3316A0027056B9E00D2DD0E /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
+		F3316A022705727A00D2DD0E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		F3316A042705746300D2DD0E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F3316A0627057BAF00D2DD0E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		F3316A082705DEAB00D2DD0E /* MyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostCell.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		F33B896627082B2600AEFCC5 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		F33B89682708548800AEFCC5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F3AEE56A27073864004388E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF2D427A73D2F357704612A /* Pods_ios_myinsta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BE3075B58F892C6573870C /* Pods_ios_myinstaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +138,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F608968A0AD38178CDA7A0 /* Pods_ios_myinsta_ios_myinstaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F975A8A7F888443883898C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3058617483DA4D945332AC0B /* Pods_ios_myinsta.framework */,
+				D36E8E1B49160E339615C93A /* Pods_ios_myinsta_ios_myinstaUITests.framework */,
+				BEDB15DE12533A5EAA69F9CF /* Pods_ios_myinstaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE9E04530144ADC527BDB459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				952F8C643B078BB00E143100 /* Pods-ios-myinsta.debug.xcconfig */,
+				794AE61002392F30A95FC7DB /* Pods-ios-myinsta.release.xcconfig */,
+				60B03A650475F7E58959C81D /* Pods-ios-myinsta-ios-myinstaUITests.debug.xcconfig */,
+				C1D8300E7F8A763AC83724F1 /* Pods-ios-myinsta-ios-myinstaUITests.release.xcconfig */,
+				2B9E6ADD9B4667B9A70BBC07 /* Pods-ios-myinstaTests.debug.xcconfig */,
+				E04D95EEC569ECE3CC3981BD /* Pods-ios-myinstaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F331699027008E3000D2DD0E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +175,8 @@
 				F33169B227008E3200D2DD0E /* ios-myinstaTests */,
 				F33169BD27008E3200D2DD0E /* ios-myinstaUITests */,
 				F331699A27008E3000D2DD0E /* Products */,
+				EE9E04530144ADC527BDB459 /* Pods */,
+				0F975A8A7F888443883898C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +193,17 @@
 		F331699B27008E3000D2DD0E /* ios-myinsta */ = {
 			isa = PBXGroup;
 			children = (
+				F33169FD270563FE00D2DD0E /* cells */,
+				F33169F82704B13F00D2DD0E /* viewmodel */,
+				F33169E52701EB3C00D2DD0E /* model */,
+				F33169E42701EB2E00D2DD0E /* services */,
+				F33169D42700917D00D2DD0E /* utils */,
+				F33169CD27008E6900D2DD0E /* screens */,
+				F33169CC27008E4B00D2DD0E /* apputils */,
 				F331699C27008E3000D2DD0E /* AppDelegate.swift */,
 				F331699E27008E3000D2DD0E /* SceneDelegate.swift */,
-				F33169A027008E3000D2DD0E /* ContentView.swift */,
-				F33169A227008E3200D2DD0E /* Assets.xcassets */,
-				F33169A727008E3200D2DD0E /* LaunchScreen.storyboard */,
 				F33169AA27008E3200D2DD0E /* Info.plist */,
+				F3AEE56A27073864004388E2 /* GoogleService-Info.plist */,
 				F33169A427008E3200D2DD0E /* Preview Content */,
 			);
 			path = "ios-myinsta";
@@ -136,6 +235,83 @@
 			path = "ios-myinstaUITests";
 			sourceTree = "<group>";
 		};
+		F33169CC27008E4B00D2DD0E /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				F33169E02701984100D2DD0E /* Billabong.ttf */,
+				F33169DD270196F600D2DD0E /* Localizable.strings */,
+				F33169A227008E3200D2DD0E /* Assets.xcassets */,
+				F33169A727008E3200D2DD0E /* LaunchScreen.storyboard */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		F33169CD27008E6900D2DD0E /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				F33169D027008EA600D2DD0E /* StarterScreen.swift */,
+				F33169D227008F9A00D2DD0E /* SignInScreen.swift */,
+				F33169D7270096B100D2DD0E /* SignUpScreen.swift */,
+				F33169E22701EB2600D2DD0E /* HomeScreen.swift */,
+				F33169EA2701EE5400D2DD0E /* HomeFeedScreen.swift */,
+				F33169EC2701EE6600D2DD0E /* HomeSearchScreen.swift */,
+				F33169EE2701EE7B00D2DD0E /* HomeUploadScreen.swift */,
+				F33169F02701EE8A00D2DD0E /* HomeLikesScreen.swift */,
+				F33169F22701EE9800D2DD0E /* HomeProfileScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		F33169D42700917D00D2DD0E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F33169D5270091A600D2DD0E /* Utils.swift */,
+				F33169F4270435EF00D2DD0E /* Coordinator.swift */,
+				F33169F6270436D900D2DD0E /* ImagePickerView.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F33169E42701EB2E00D2DD0E /* services */ = {
+			isa = PBXGroup;
+			children = (
+				F33169E82701EB5300D2DD0E /* SessionStore.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		F33169E52701EB3C00D2DD0E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F33169E62701EB4600D2DD0E /* User.swift */,
+				F33169FB2704B19700D2DD0E /* Post.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F33169F82704B13F00D2DD0E /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				F33169F92704B16100D2DD0E /* FeedViewModel.swift */,
+				F3316A0027056B9E00D2DD0E /* LikesViewModel.swift */,
+				F3316A022705727A00D2DD0E /* SearchViewModel.swift */,
+				F3316A0627057BAF00D2DD0E /* ProfileViewModel.swift */,
+				F33B896627082B2600AEFCC5 /* SignInViewModel.swift */,
+				F33B89682708548800AEFCC5 /* SignUpViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		F33169FD270563FE00D2DD0E /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				F33169FE2705641E00D2DD0E /* PostCell.swift */,
+				F3316A042705746300D2DD0E /* UserCell.swift */,
+				F3316A082705DEAB00D2DD0E /* MyPostCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +319,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F33169C327008E3200D2DD0E /* Build configuration list for PBXNativeTarget "ios-myinsta" */;
 			buildPhases = (
+				2A4BBE7027C4AEDE16CAB89C /* [CP] Check Pods Manifest.lock */,
 				F331699527008E3000D2DD0E /* Sources */,
 				F331699627008E3000D2DD0E /* Frameworks */,
 				F331699727008E3000D2DD0E /* Resources */,
+				AB5A990F796F4915773059EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +338,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F33169C627008E3200D2DD0E /* Build configuration list for PBXNativeTarget "ios-myinstaTests" */;
 			buildPhases = (
+				83B8EA94103CD4B26BF698F5 /* [CP] Check Pods Manifest.lock */,
 				F33169AB27008E3200D2DD0E /* Sources */,
 				F33169AC27008E3200D2DD0E /* Frameworks */,
 				F33169AD27008E3200D2DD0E /* Resources */,
@@ -178,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F33169C927008E3200D2DD0E /* Build configuration list for PBXNativeTarget "ios-myinstaUITests" */;
 			buildPhases = (
+				2D6294FCE38F51A93A00B884 /* [CP] Check Pods Manifest.lock */,
 				F33169B627008E3200D2DD0E /* Sources */,
 				F33169B727008E3200D2DD0E /* Frameworks */,
 				F33169B827008E3200D2DD0E /* Resources */,
+				A6043250D6C0529AF401C6D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +402,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F331699027008E3000D2DD0E;
 			productRefGroup = F331699A27008E3000D2DD0E /* Products */;
@@ -239,7 +421,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33169E12701984100D2DD0E /* Billabong.ttf in Resources */,
 				F33169A927008E3200D2DD0E /* LaunchScreen.storyboard in Resources */,
+				F3AEE56B27073864004388E2 /* GoogleService-Info.plist in Resources */,
+				F33169DB270196F600D2DD0E /* Localizable.strings in Resources */,
 				F33169A627008E3200D2DD0E /* Preview Assets.xcassets in Resources */,
 				F33169A327008E3200D2DD0E /* Assets.xcassets in Resources */,
 			);
@@ -261,14 +446,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A4BBE7027C4AEDE16CAB89C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-myinsta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D6294FCE38F51A93A00B884 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-myinsta-ios-myinstaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83B8EA94103CD4B26BF698F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-myinstaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6043250D6C0529AF401C6D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-myinsta-ios-myinstaUITests/Pods-ios-myinsta-ios-myinstaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-myinsta-ios-myinstaUITests/Pods-ios-myinsta-ios-myinstaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-myinsta-ios-myinstaUITests/Pods-ios-myinsta-ios-myinstaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB5A990F796F4915773059EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-myinsta/Pods-ios-myinsta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-myinsta/Pods-ios-myinsta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-myinsta/Pods-ios-myinsta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F331699527008E3000D2DD0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33169F32701EE9800D2DD0E /* HomeProfileScreen.swift in Sources */,
+				F33169FA2704B16100D2DD0E /* FeedViewModel.swift in Sources */,
+				F33169F12701EE8A00D2DD0E /* HomeLikesScreen.swift in Sources */,
+				F33169F5270435EF00D2DD0E /* Coordinator.swift in Sources */,
+				F33169EB2701EE5400D2DD0E /* HomeFeedScreen.swift in Sources */,
+				F33169D6270091A600D2DD0E /* Utils.swift in Sources */,
 				F331699D27008E3000D2DD0E /* AppDelegate.swift in Sources */,
+				F33169E32701EB2600D2DD0E /* HomeScreen.swift in Sources */,
+				F33169D327008F9A00D2DD0E /* SignInScreen.swift in Sources */,
+				F33169E72701EB4600D2DD0E /* User.swift in Sources */,
+				F33169E92701EB5300D2DD0E /* SessionStore.swift in Sources */,
+				F3316A0127056B9E00D2DD0E /* LikesViewModel.swift in Sources */,
+				F33169D127008EA600D2DD0E /* StarterScreen.swift in Sources */,
+				F33169FF2705641E00D2DD0E /* PostCell.swift in Sources */,
+				F33B89692708548800AEFCC5 /* SignUpViewModel.swift in Sources */,
+				F33B896727082B2600AEFCC5 /* SignInViewModel.swift in Sources */,
 				F331699F27008E3000D2DD0E /* SceneDelegate.swift in Sources */,
-				F33169A127008E3000D2DD0E /* ContentView.swift in Sources */,
+				F3316A0727057BAF00D2DD0E /* ProfileViewModel.swift in Sources */,
+				F3316A032705727A00D2DD0E /* SearchViewModel.swift in Sources */,
+				F33169F7270436D900D2DD0E /* ImagePickerView.swift in Sources */,
+				F33169ED2701EE6600D2DD0E /* HomeSearchScreen.swift in Sources */,
+				F33169FC2704B19700D2DD0E /* Post.swift in Sources */,
+				F33169D8270096B100D2DD0E /* SignUpScreen.swift in Sources */,
+				F3316A052705746300D2DD0E /* UserCell.swift in Sources */,
+				F33169EF2701EE7B00D2DD0E /* HomeUploadScreen.swift in Sources */,
+				F3316A092705DEAB00D2DD0E /* MyPostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +619,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				F33169A827008E3200D2DD0E /* Base */,
+				F33169DE2701973F00D2DD0E /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F33169DD270196F600D2DD0E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F33169DC270196F600D2DD0E /* en */,
+				F33169DF2701974000D2DD0E /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,6 +640,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +702,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -433,6 +756,7 @@
 		};
 		F33169C427008E3200D2DD0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 952F8C643B078BB00E143100 /* Pods-ios-myinsta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +778,7 @@
 		};
 		F33169C527008E3200D2DD0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794AE61002392F30A95FC7DB /* Pods-ios-myinsta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +800,7 @@
 		};
 		F33169C727008E3200D2DD0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9E6ADD9B4667B9A70BBC07 /* Pods-ios-myinstaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +823,7 @@
 		};
 		F33169C827008E3200D2DD0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04D95EEC569ECE3CC3981BD /* Pods-ios-myinstaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +846,7 @@
 		};
 		F33169CA27008E3200D2DD0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B03A650475F7E58959C81D /* Pods-ios-myinsta-ios-myinstaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +867,7 @@
 		};
 		F33169CB27008E3200D2DD0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D8300E7F8A763AC83724F1 /* Pods-ios-myinsta-ios-myinstaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
