@@ -34,7 +34,7 @@
 		F33169F7270436D900D2DD0E /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169F6270436D900D2DD0E /* ImagePickerView.swift */; };
 		F33169FA2704B16100D2DD0E /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169F92704B16100D2DD0E /* FeedViewModel.swift */; };
 		F33169FC2704B19700D2DD0E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169FB2704B19700D2DD0E /* Post.swift */; };
-		F33169FF2705641E00D2DD0E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169FE2705641E00D2DD0E /* PostCell.swift */; };
+		F33169FF2705641E00D2DD0E /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33169FE2705641E00D2DD0E /* FeedPostCell.swift */; };
 		F3316A0127056B9E00D2DD0E /* LikesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A0027056B9E00D2DD0E /* LikesViewModel.swift */; };
 		F3316A032705727A00D2DD0E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A022705727A00D2DD0E /* SearchViewModel.swift */; };
 		F3316A052705746300D2DD0E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A042705746300D2DD0E /* UserCell.swift */; };
@@ -42,6 +42,14 @@
 		F3316A092705DEAB00D2DD0E /* MyPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3316A082705DEAB00D2DD0E /* MyPostCell.swift */; };
 		F33B896727082B2600AEFCC5 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B896627082B2600AEFCC5 /* SignInViewModel.swift */; };
 		F33B89692708548800AEFCC5 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B89682708548800AEFCC5 /* SignUpViewModel.swift */; };
+		F33B896B270C9DDE00AEFCC5 /* DatabaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B896A270C9DDE00AEFCC5 /* DatabaseStore.swift */; };
+		F33B896D270CA95900AEFCC5 /* StorageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B896C270CA95900AEFCC5 /* StorageStore.swift */; };
+		F33B896F270DB93800AEFCC5 /* UploadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B896E270DB93800AEFCC5 /* UploadViewModel.swift */; };
+		F33B8971270EB8BE00AEFCC5 /* LikePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B8970270EB8BE00AEFCC5 /* LikePostCell.swift */; };
+		F33B89772712E12900AEFCC5 /* UrlImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B89762712E12900AEFCC5 /* UrlImageModel.swift */; };
+		F33B89792713123100AEFCC5 /* OtherProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B89782713123100AEFCC5 /* OtherProfileScreen.swift */; };
+		F33B897B2713138A00AEFCC5 /* OtherProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B897A2713138A00AEFCC5 /* OtherProfileViewModel.swift */; };
+		F33B897D271315FD00AEFCC5 /* OtherPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B897C271315FC00AEFCC5 /* OtherPostCell.swift */; };
 		F3AEE56B27073864004388E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3AEE56A27073864004388E2 /* GoogleService-Info.plist */; };
 		FFF2D427A73D2F357704612A /* Pods_ios_myinsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3058617483DA4D945332AC0B /* Pods_ios_myinsta.framework */; };
 /* End PBXBuildFile section */
@@ -106,7 +114,7 @@
 		F33169F6270436D900D2DD0E /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		F33169F92704B16100D2DD0E /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		F33169FB2704B19700D2DD0E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		F33169FE2705641E00D2DD0E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F33169FE2705641E00D2DD0E /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
 		F3316A0027056B9E00D2DD0E /* LikesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewModel.swift; sourceTree = "<group>"; };
 		F3316A022705727A00D2DD0E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		F3316A042705746300D2DD0E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -114,6 +122,14 @@
 		F3316A082705DEAB00D2DD0E /* MyPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostCell.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		F33B896627082B2600AEFCC5 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		F33B89682708548800AEFCC5 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		F33B896A270C9DDE00AEFCC5 /* DatabaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseStore.swift; sourceTree = "<group>"; };
+		F33B896C270CA95900AEFCC5 /* StorageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageStore.swift; sourceTree = "<group>"; };
+		F33B896E270DB93800AEFCC5 /* UploadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewModel.swift; sourceTree = "<group>"; };
+		F33B8970270EB8BE00AEFCC5 /* LikePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikePostCell.swift; sourceTree = "<group>"; };
+		F33B89762712E12900AEFCC5 /* UrlImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageModel.swift; sourceTree = "<group>"; };
+		F33B89782713123100AEFCC5 /* OtherProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileScreen.swift; sourceTree = "<group>"; };
+		F33B897A2713138A00AEFCC5 /* OtherProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileViewModel.swift; sourceTree = "<group>"; };
+		F33B897C271315FC00AEFCC5 /* OtherPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherPostCell.swift; sourceTree = "<group>"; };
 		F3AEE56A27073864004388E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,12 +209,12 @@
 		F331699B27008E3000D2DD0E /* ios-myinsta */ = {
 			isa = PBXGroup;
 			children = (
+				F33169CD27008E6900D2DD0E /* screens */,
 				F33169FD270563FE00D2DD0E /* cells */,
 				F33169F82704B13F00D2DD0E /* viewmodel */,
 				F33169E52701EB3C00D2DD0E /* model */,
 				F33169E42701EB2E00D2DD0E /* services */,
 				F33169D42700917D00D2DD0E /* utils */,
-				F33169CD27008E6900D2DD0E /* screens */,
 				F33169CC27008E4B00D2DD0E /* apputils */,
 				F331699C27008E3000D2DD0E /* AppDelegate.swift */,
 				F331699E27008E3000D2DD0E /* SceneDelegate.swift */,
@@ -258,6 +274,7 @@
 				F33169EE2701EE7B00D2DD0E /* HomeUploadScreen.swift */,
 				F33169F02701EE8A00D2DD0E /* HomeLikesScreen.swift */,
 				F33169F22701EE9800D2DD0E /* HomeProfileScreen.swift */,
+				F33B89782713123100AEFCC5 /* OtherProfileScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -268,6 +285,7 @@
 				F33169D5270091A600D2DD0E /* Utils.swift */,
 				F33169F4270435EF00D2DD0E /* Coordinator.swift */,
 				F33169F6270436D900D2DD0E /* ImagePickerView.swift */,
+				F33B89762712E12900AEFCC5 /* UrlImageModel.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -276,6 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				F33169E82701EB5300D2DD0E /* SessionStore.swift */,
+				F33B896A270C9DDE00AEFCC5 /* DatabaseStore.swift */,
+				F33B896C270CA95900AEFCC5 /* StorageStore.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -298,6 +318,8 @@
 				F3316A0627057BAF00D2DD0E /* ProfileViewModel.swift */,
 				F33B896627082B2600AEFCC5 /* SignInViewModel.swift */,
 				F33B89682708548800AEFCC5 /* SignUpViewModel.swift */,
+				F33B896E270DB93800AEFCC5 /* UploadViewModel.swift */,
+				F33B897A2713138A00AEFCC5 /* OtherProfileViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -305,9 +327,11 @@
 		F33169FD270563FE00D2DD0E /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				F33169FE2705641E00D2DD0E /* PostCell.swift */,
+				F33169FE2705641E00D2DD0E /* FeedPostCell.swift */,
 				F3316A042705746300D2DD0E /* UserCell.swift */,
 				F3316A082705DEAB00D2DD0E /* MyPostCell.swift */,
+				F33B8970270EB8BE00AEFCC5 /* LikePostCell.swift */,
+				F33B897C271315FC00AEFCC5 /* OtherPostCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -557,17 +581,21 @@
 				F33169F32701EE9800D2DD0E /* HomeProfileScreen.swift in Sources */,
 				F33169FA2704B16100D2DD0E /* FeedViewModel.swift in Sources */,
 				F33169F12701EE8A00D2DD0E /* HomeLikesScreen.swift in Sources */,
+				F33B896D270CA95900AEFCC5 /* StorageStore.swift in Sources */,
 				F33169F5270435EF00D2DD0E /* Coordinator.swift in Sources */,
 				F33169EB2701EE5400D2DD0E /* HomeFeedScreen.swift in Sources */,
+				F33B89792713123100AEFCC5 /* OtherProfileScreen.swift in Sources */,
 				F33169D6270091A600D2DD0E /* Utils.swift in Sources */,
 				F331699D27008E3000D2DD0E /* AppDelegate.swift in Sources */,
+				F33B896B270C9DDE00AEFCC5 /* DatabaseStore.swift in Sources */,
 				F33169E32701EB2600D2DD0E /* HomeScreen.swift in Sources */,
 				F33169D327008F9A00D2DD0E /* SignInScreen.swift in Sources */,
 				F33169E72701EB4600D2DD0E /* User.swift in Sources */,
 				F33169E92701EB5300D2DD0E /* SessionStore.swift in Sources */,
 				F3316A0127056B9E00D2DD0E /* LikesViewModel.swift in Sources */,
 				F33169D127008EA600D2DD0E /* StarterScreen.swift in Sources */,
-				F33169FF2705641E00D2DD0E /* PostCell.swift in Sources */,
+				F33169FF2705641E00D2DD0E /* FeedPostCell.swift in Sources */,
+				F33B8971270EB8BE00AEFCC5 /* LikePostCell.swift in Sources */,
 				F33B89692708548800AEFCC5 /* SignUpViewModel.swift in Sources */,
 				F33B896727082B2600AEFCC5 /* SignInViewModel.swift in Sources */,
 				F331699F27008E3000D2DD0E /* SceneDelegate.swift in Sources */,
@@ -576,7 +604,11 @@
 				F33169F7270436D900D2DD0E /* ImagePickerView.swift in Sources */,
 				F33169ED2701EE6600D2DD0E /* HomeSearchScreen.swift in Sources */,
 				F33169FC2704B19700D2DD0E /* Post.swift in Sources */,
+				F33B897B2713138A00AEFCC5 /* OtherProfileViewModel.swift in Sources */,
 				F33169D8270096B100D2DD0E /* SignUpScreen.swift in Sources */,
+				F33B896F270DB93800AEFCC5 /* UploadViewModel.swift in Sources */,
+				F33B89772712E12900AEFCC5 /* UrlImageModel.swift in Sources */,
+				F33B897D271315FD00AEFCC5 /* OtherPostCell.swift in Sources */,
 				F3316A052705746300D2DD0E /* UserCell.swift in Sources */,
 				F33169EF2701EE7B00D2DD0E /* HomeUploadScreen.swift in Sources */,
 				F3316A092705DEAB00D2DD0E /* MyPostCell.swift in Sources */,

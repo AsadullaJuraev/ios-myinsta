@@ -9,42 +9,30 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct MyPostCell: View {
-    var level: Int
-    @State var isLiked = false
+    @State private var showingAlert = false
+    var uid: String
+    var viewModel: ProfileViewModel
     var post: Post
+    var level: Int
     var length: CGFloat
     
     var body: some View {
         VStack(spacing: 0){
-            WebImage(url: URL(string:post.imgUrl!))
+            WebImage(url: URL(string:post.imgPost!))
                 .resizable()
                 .frame(width: length, height: length)
                 .scaledToFit()
-            if level == 1 {
-                HStack(spacing: 0){
-                    Button(action:{
-                        self.isLiked.toggle()
-                    }){
-                        Image("ic_like\(!isLiked ? "" : "_on")")
-                            .resizable()
-                            .frame(width: 26, height: 26)
-                            .foregroundColor(!isLiked ? .black : .red)
-                        
-                    }
-                    
-                    Button(action:{
-                        
-                    }){
-                        Image("ic_share")
-                            .resizable()
-                            .frame(width: 26, height: 26)
-                            .foregroundColor(.black)
-                    }.padding(.leading, 15)
-                    
-                    Spacer()
-                }.padding([.horizontal, .top], 15)
-            }
-            Text("Make a symbolic breakpoint it")
+                .onTapGesture(count: 2, perform: {
+                    showingAlert = true
+                })
+                .alert(isPresented: $showingAlert){
+                    let title = "Delete"
+                    let message = "Do you want to delete this post?"
+                    return Alert(title: Text(title), message: Text(message), primaryButton: .destructive(Text("Confirm"), action: {
+                        viewModel.apiRemovePost(uid: uid, post: post)
+                    }), secondaryButton: .cancel())
+                }
+            Text(post.caption ?? "")
                 .foregroundColor(.black)
                 .font(.system(size: 16))
                 .padding(.vertical, 10)

@@ -7,19 +7,28 @@
 
 import Foundation
 
-struct Post: Hashable{
-    var title: String?
-    var content: String?
-    var imgUrl: String?
+struct Post: Hashable {
+    var id = UUID()
     
-    init(title: String?, content: String?) {
-        self.title = title
-        self.content = content
+    var postId: String? = ""
+    var caption: String? = ""
+    var imgPost: String? = ""
+    var time: String? = "October 6, 2021"
+    
+    var uid: String? = ""
+    var displayName: String? = "juraev00"
+    var imgUser: String? = ""
+    
+    var isLiked: Bool? = false
+    
+    init(caption: String?, imgPost: String?) {
+        self.caption = caption
+        self.imgPost = imgPost
     }
     
-    init(title: String?, content: String?, imgUrl: String?){
-        self.title = title
-        self.content = content
-        self.imgUrl = imgUrl
+    init(postId: String, caption: String?, imgPost: String?) {
+        self.postId = postId
+        self.caption = caption
+        self.imgPost = imgPost
     }
 }

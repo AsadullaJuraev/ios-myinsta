@@ -1,21 +1,17 @@
 //
-//  HomeProfileScreen.swift
+//  OtherProfileScreen.swift
 //  ios-myinsta
 //
-//  Created by Asadulla Juraev on 27/09/21.
+//  Created by Asadulla Juraev on 10/10/21.
 //
 
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct HomeProfileScreen: View {
+struct OtherProfileScreen: View {
     @EnvironmentObject var session: SessionStore
-    @ObservedObject var viewModel = ProfileViewModel()
-    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
-    @State private var selectedImage: UIImage?
-    @State private var isImagePickerDisplay = false
-    @State private var showingOptions = false
-    @State private var showingAlert = false
+    @ObservedObject var viewModel = OtherProfileViewModel()
+    var uid : String
     @State var level = 2
     
     func postSize() -> CGFloat {
@@ -29,9 +25,18 @@ struct HomeProfileScreen: View {
         return Array(repeating: GridItem(.flexible(minimum: postSize()), spacing: 10), count: self.level)
     }
     
-    func uploadImage(){
-        let uid = (session.session?.uid)!
-        viewModel.apiUploadMyImage(uid: uid, image: selectedImage!)
+    func usr_login(userLogin: String)-> String{
+        var str = "@"
+        if userLogin != "" {
+            for i in userLogin{
+                if i == " " {
+                    str += "_"
+                }else{
+                    str += "\(i.lowercased())"
+                }
+            }
+        }
+        return str
     }
     
     var body: some View {
@@ -62,38 +67,6 @@ struct HomeProfileScreen: View {
                         }
                         .overlay(RoundedRectangle(cornerRadius: 37).stroke(Utils.color2, lineWidth: 2))
                         
-                        HStack{
-                            Spacer()
-                            VStack(alignment: .trailing){
-                                Spacer()
-                                Button(action: {
-                                    self.showingOptions.toggle()
-                                }, label: {
-                                    Image(systemName: "plus.circle.fill")
-                                        .resizable()
-                                        .frame(width: 20, height: 20)
-                                })
-                                .sheet(isPresented: self.$isImagePickerDisplay, onDismiss: uploadImage) {
-                                    ImagePickerView(selectedImage: self.$selectedImage, sourceType: self.sourceType)
-                                }
-                                .actionSheet(isPresented: $showingOptions) {
-                                    ActionSheet(
-                                        title: Text("Actions"),
-                                        buttons: [
-                                            .default(Text("pick_photo")) {
-                                                sourceType = .photoLibrary
-                                                self.isImagePickerDisplay.toggle()
-                                            },
-                                            .default(Text("take_photo")) {
-                                                sourceType = .camera
-                                                self.isImagePickerDisplay.toggle()
-                                            },
-                                            .cancel(),
-                                        ]
-                                    )
-                                }
-                            }
-                        }.frame(width: 77, height: 77)
                     }
                     
                     Text(viewModel.displayName)
@@ -146,7 +119,23 @@ struct HomeProfileScreen: View {
                         
                         
                     }.padding(.top, 10)
-                    
+                    Button(action:{
+                        if isFollowed(uid: uid) {
+                            viewModel.apiUnFollowUser(uid: (session.session?.uid)!, to: viewModel.user)
+                            isFollowed(uid: uid)
+                        }else{
+                            viewModel.apiFollowUser(uid: (session.session?.uid)!, to: viewModel.user)
+                            isFollowed(uid: uid)
+                        }
+                    }){
+                        Text(isFollowed(uid: uid) ? "Following" : "Follow")
+                            .font(.system(size: 15))
+                            .foregroundColor(isFollowed(uid: uid) ? .black.opacity(0.5) : .white)
+                            .frame(width: 90, height: 30)
+                            .overlay(RoundedRectangle(cornerRadius: 5).stroke(isFollowed(uid: uid) ? Color.gray : Color.white, lineWidth: 1))
+                            .background(isFollowed(uid: uid) ? .white : Utils.color2)
+                            .cornerRadius(5)
+                    }
                     HStack{
                         Spacer()
                         Button(action:{
@@ -168,8 +157,8 @@ struct HomeProfileScreen: View {
                     ScrollView{
                         LazyVGrid(columns: columns(), spacing: 10){
                             ForEach(0..<viewModel.items.count, id:\.self){ item in
-                                if let uid = session.session?.uid! {
-                                    MyPostCell(uid: uid, viewModel: viewModel, post: viewModel.items[item], level: level, length: postSize())
+                                if uid != nil {
+                                    OtherPostCell(viewModel: viewModel, post: viewModel.items[item],  length: postSize())
                                     if level == 1 {
                                         Divider()
                                     }
@@ -184,31 +173,29 @@ struct HomeProfileScreen: View {
                     ProgressView()
                 }
             }
-            .navigationBarTitle("Profile", displayMode: .inline)
-            .navigationBarItems(trailing:
-                                    Button(action:{
-                self.showingAlert = true
-            }){
-                Image(systemName: "pip.exit")
-                    .font(.title3)
-            }
-                                    .alert(isPresented: $showingAlert, content: {
-               
-                return Alert(title: Text("sign_out"), message: Text("sign_out_text"), primaryButton: .destructive(Text("confirm"), action: {
-                    viewModel.apiSignOut()
-                }), secondaryButton: .cancel())
-            }
-)
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarItems(leading:
+                                    Text(usr_login(userLogin: viewModel.displayName))
+                                    .font(.system(size: 14))
+                                    .fontWeight(.bold)
             )
         }.onAppear{
-            let uid = (session.session?.uid)!
-            viewModel.apiLoadUser(uid:uid)
+            if uid != nil {
+                viewModel.apiLoadUser(uid:uid)
+            }
+            
         }
+    }
+    
+    func isFollowed(uid: String)-> Bool {
+        
+        for user in viewModel.followers {
+            if user.uid == (session.session?.uid)! {
+                return true
+            }
+        }
+        
+        return false
     }
 }
 
-struct HomeProfileScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeProfileScreen()
-    }
-}

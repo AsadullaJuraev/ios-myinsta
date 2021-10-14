@@ -15,6 +15,13 @@ class Utils{
     static var image1 = "https://lh6.googleusercontent.com/-9lzOk_OWZH0/URquoo4xYoI/AAAAAAAAAbs/AwgzHtNVCwU/s1024/Frantic.jpg"
     static var image2 = "https://lh4.googleusercontent.com/-JhFi4fb_Pqw/URquuX-QXbI/AAAAAAAAAbs/IXpYUxuweYM/s1024/Horseshoe%252520Bend.jpg"
     
+    static func currentDate() -> String {
+        let date = Date()
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd HH:mm"
+        let dateString = df.string(from: date)
+        return dateString
+    }
 }
 
 extension UIScreen{

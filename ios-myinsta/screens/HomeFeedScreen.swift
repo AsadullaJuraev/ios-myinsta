@@ -8,18 +8,37 @@
 import SwiftUI
 
 struct HomeFeedScreen: View {
+    @EnvironmentObject var session: SessionStore
     @Binding var tabSelection: Int
     @ObservedObject var viewModel = FeedViewModel()
-    
     var body: some View {
         NavigationView{
             ZStack{
-                List{
-                    ForEach(viewModel.items, id:\.self){ item in
-                        PostCell(post: item).listRowInsets(EdgeInsets())
+                if !viewModel.items.isEmpty {
+                    List{
+                        ForEach(viewModel.items, id:\.self){ item in
+                            if let uid = session.session?.uid! {
+                                FeedPostCell(uid: uid, viewModel: viewModel, post: item,tabSelection: $tabSelection)
+                                    .listRowInsets(EdgeInsets())
+                            }
+                        }
                     }
+                    .listStyle(PlainListStyle())
+                }else if viewModel.isLoading == false && viewModel.items.isEmpty{
+                    VStack{
+                        Image(systemName: "person.badge.plus")
+                            .renderingMode(.original)
+                            .font(.system(size: 50))
+                            .foregroundColor(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
+                        Text("If you want to watch photos another users, you have to following them.")
+                            .fontWeight(.thin)
+                            .font(.title3)
+                    }
+                    .padding(.all, 20)
                 }
-                .listStyle(PlainListStyle())
+                if viewModel.isLoading {
+                    ProgressView()
+                }
             }
             .navigationBarItems(trailing:
                                     Button(action:{
@@ -32,8 +51,8 @@ struct HomeFeedScreen: View {
             .navigationBarTitle("app_name", displayMode: .inline)
         }
         .onAppear{
-            viewModel.apiPostList {
-                print(viewModel.items.count)
+            if let uid = session.session?.uid! {
+                viewModel.apiFeedList(uid:uid)
             }
         }
     }

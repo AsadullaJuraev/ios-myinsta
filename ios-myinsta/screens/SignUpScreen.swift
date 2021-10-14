@@ -27,7 +27,7 @@ struct SignUpScreen: View {
             }else{
                 var user = User(email: email, displayName: fullname, password: password, imgUser: "")
                 user.uid = session.session?.uid
-                //viewModel.apiStoreUser(user: user)
+                viewModel.apiStoreUser(user: user)
                 presentation.wrappedValue.dismiss()
             }
         })
@@ -42,13 +42,13 @@ struct SignUpScreen: View {
                     Text("app_name").foregroundColor(.white)
                         .font(Font.custom("Billabong", size: 45))
                     
-                    TextField("fullname", text: $fullname)
+                    TextField(NSLocalizedString("fullname", comment: "fullname"), text: $fullname)
                         .frame(height: 50).padding(.leading, 10)
                         .foregroundColor(.white)
                         .background(Color.white.opacity(0.4)).cornerRadius(8)
                         .padding(.top,30)
                     
-                    TextField("text_email", text: $email, onEditingChanged: { (isChanged) in
+                    TextField(NSLocalizedString("text_email", comment: "text_email"), text: $email, onEditingChanged: { (isChanged) in
                         if !isChanged {
                             if self.emailValidator(email){
                                 self.isEmailValid = true
@@ -210,19 +210,6 @@ struct SignUpScreen: View {
         let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordFormate)
         return passwordPredicate.evaluate(with: string)
     }
-    
-//    Password Validation:
-//    Vignesh123! : true
-//    vignesh123 : false
-//    VIGNESH123! : false
-//    vignesh@ : false
-//    12345678? : false
-//
-//    Email Validation:
-//    pdponline@gmail.com : true
-//    pdponlinegmail.com : false
-//    pdp@online@gmail.com : false
-//    pdp#online@gmail.com : false
 
 }
 

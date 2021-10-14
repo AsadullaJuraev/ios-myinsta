@@ -6,23 +6,28 @@
 //
 
 import Foundation
+import UIKit
 
 class FeedViewModel: ObservableObject{
     @Published var isLoading = false
     @Published var items: [Post] = []
+    @Published var photo: UIImage?
     
-    func apiPostList(completion: @escaping () -> ()){
+    func apiFeedList(uid: String){
         isLoading = true
         items.removeAll()
-        
-        self.items.append(Post(title: "juraev", content: "September 30, 2021", imgUrl: Utils.image1))
-        self.items.append(Post(title: "juraev", content: "September 30, 2021", imgUrl: Utils.image2))
-        self.items.append(Post(title: "juraev", content: "September 30, 2021", imgUrl: Utils.image1))
-        self.items.append(Post(title: "juraev", content: "September 30, 2021", imgUrl: Utils.image2))
-        self.items.append(Post(title: "juraev", content: "September 30, 2021", imgUrl: Utils.image1))
-        self.items.append(Post(title: "juraev", content: "September 30, 2021", imgUrl: Utils.image2))
-        
-        isLoading = false
-        completion()
+        DatabaseStore().loadFeeds(uid: uid, completion: { posts in
+            self.items = posts!
+            self.isLoading = false
+        })
+    }
+    
+    func apiLikePost(uid: String, post: Post) {
+        DatabaseStore().likeFeedPost(uid: uid, post: post)
+    }
+    
+    func apiRemovePost(uid: String, post: Post){
+        DatabaseStore().removeMyPost(uid: uid, post: post)
+        apiFeedList(uid: uid)
     }
 }

@@ -30,7 +30,7 @@ struct SignInScreen: View {
                     Text("app_name").foregroundColor(.white)
                         .font(Font.custom("Billabong", size: 45))
                     
-                    TextField("text_email", text: $email)
+                    TextField(NSLocalizedString("text_email", comment: "text_email"), text: $email)
                         .frame(height: 50).padding(.leading, 10)
                         .foregroundColor(.white)
                         .background(Color.white.opacity(0.4)).cornerRadius(8)

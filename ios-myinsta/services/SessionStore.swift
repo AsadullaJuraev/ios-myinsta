@@ -26,22 +26,22 @@ class SessionStore: ObservableObject{
     }
     
     // additional methods (sign up, sign in) will go here
-        
-        func signUp(email: String, password: String, handler: @escaping AuthDataResultCallback) {
-            Auth.auth().createUser(withEmail: email, password: password, completion: handler)
+    
+    func signUp(email: String, password: String, handler: @escaping AuthDataResultCallback) {
+        Auth.auth().createUser(withEmail: email, password: password, completion: handler)
+    }
+    
+    func signIn(email: String, password: String, handler: @escaping AuthDataResultCallback) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: handler)
+    }
+    
+    func signOut () -> Bool {
+        do {
+            try Auth.auth().signOut()
+            self.session = nil
+            return true
+        } catch {
+            return false
         }
-        
-        func signIn(email: String, password: String, handler: @escaping AuthDataResultCallback) {
-            Auth.auth().signIn(withEmail: email, password: password, completion: handler)
-        }
-        
-        func signOut () -> Bool {
-            do {
-                try Auth.auth().signOut()
-                self.session = nil
-                return true
-            } catch {
-                return false
-            }
-        }
+    }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeSearchScreen: View {
+    @EnvironmentObject var session: SessionStore
     @ObservedObject var viewModel = SearchViewModel()
     @State var keyword = ""
     
@@ -24,18 +25,24 @@ struct HomeSearchScreen: View {
                     
                     List{
                         ForEach(viewModel.items, id:\.self){ item in
-                            UserCell(user: item)
-                                .listRowInsets(EdgeInsets())
-                                .buttonStyle(PlainButtonStyle())
+                            if let uid = (session.session?.uid) {
+                                UserCell(uid: uid, user: item, viewModel: viewModel)
+                                    .listRowInsets(EdgeInsets())
+                                    .buttonStyle(PlainButtonStyle())
+                            }
+                            
                         }
                     }.listStyle(PlainListStyle())
+                }
+                if viewModel.isLoading {
+                    ProgressView()
                 }
             }
             .navigationBarTitle("Search", displayMode: .inline)
         }
         .onAppear{
-            viewModel.apiUserList {
-                print(viewModel.items.count)
+            if let uid = (session.session?.uid){
+                viewModel.apiUserList(uid: uid, keyword: keyword)
             }
         }
     }
